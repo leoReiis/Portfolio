@@ -1,8 +1,5 @@
 import Head from "next/head";
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import profile from "../public/profile.png";
@@ -14,7 +11,6 @@ import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
-
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -55,8 +51,8 @@ export default function Home() {
               Desenvolvedor Backend
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-            Desenvolvedor backend com experiência sólida em C#, Delphi e PHP. 
-            Comprometido em entregar soluções de qualidade e escaláveis.
+              Desenvolvedor backend com experiência sólida em C#, Delphi e PHP.
+              Comprometido em entregar soluções de qualidade e escaláveis.
             </p>
 
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
@@ -66,14 +62,22 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
+            <h3 className="text-3xl py-1 dark:text-white ">
+              <span className="text-teal-500">Minha Proposta de Valor </span>
+            </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
+              Sou um profissional especializado no desenvolvimento de sistemas,
+              com expertise em backend, utilizando principalmente PHP e Delphi.
+              Minha experiência abrange uma variedade de projetos, onde fui
+              responsável por criar e manter soluções robustas e eficientes.
+              Tenho habilidades sólidas em arquitetura de software, design de
+              banco de dados e otimização de desempenho. Além disso, estou
+              sempre atualizado com as melhores práticas e tendências da
+              indústria, garantindo que meus projetos estejam alinhados com as
+              necessidades e expectativas dos clientes. Sou apaixonado por
+              resolver problemas complexos e estou sempre em busca de desafios
+              que me permitam aprimorar minhas habilidades e contribuir para o
+              sucesso dos projetos em que estou envolvido.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               I offer from a wide range of services, including brand design,
@@ -83,45 +87,31 @@ export default function Home() {
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={delphi} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Delphi
-              </h3>
+              <h3 className="text-lg font-medium pt-8 pb-2  ">Delphi</h3>
               <p className="py-2">
-                Desenvolvimento e manutenção de sistemas voltados a gestão pública.
+                Atualmente, estou envolvido no desenvolvimento e manutenção de
+                sistemas voltados para a gestão pública. Sou responsável pelos
+                módulos de contabilidade, compras, patrimônio público, frotas e
+                almoxarifado.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={php} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">
-                PHP
-              </h3>
+              <h3 className="text-lg font-medium pt-8 pb-2 ">PHP</h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
-                reality.
+                Atualmente, sou um dos responsáveis pelo desenvolvimento do
+                sistema de gestão de frotas, utilizando PHP com o framework
+                Laravel.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={csharp} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">C#</h3>
               <p className="py-2">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
+                Recentemente, tenho explorado a linguagem e as potencialidades
+                do .NET. Dedico tempo diário aos estudos e em breve terei um
+                projeto para compartilhar aqui.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
             </div>
           </div>
         </section>
@@ -129,35 +119,46 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Portfólio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-             Desde o início da minha carreira, trabalhei com sistemas <span className="text-teal-500"> proprietários </span>.
-             No entanto, reservei um tempo para desenvolver alguns projetos pessoais e compor meu portfólio. 
-             Através desses projetos, procuro demonstrar minha <span className="text-teal-500">atenção </span> aos detalhes, 
-             sabendo que eles fazem toda a diferença no resultado final.      
+              Desde o início da minha carreira, trabalhei com sistemas{" "}
+              <span className="text-teal-500"> proprietários </span>. No
+              entanto, reservei um tempo para desenvolver alguns projetos
+              pessoais e compor meu portfólio. Através desses projetos, procuro
+              demonstrar minha <span className="text-teal-500">atenção </span>{" "}
+              aos detalhes, sabendo que eles fazem toda a diferença no resultado
+              final.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
-              <a href="https://github.com/leoReiis/SaiyanProject" target="_blank" rel="noopener noreferrer">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web1}
-                title="Dashboard do Saiyan Project"
-              />
+              <a
+                href="https://github.com/leoReiis/SaiyanProject"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={web1}
+                  title="Dashboard do Saiyan Project"
+                />
               </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <a href="https://github.com/leoReiis/SaiyanProject" target="_blank" rel="noopener noreferrer">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web2}
-                title="Treino montado através do Saiyan Project"
-              />
+              <a
+                href="https://github.com/leoReiis/SaiyanProject"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                  src={web2}
+                  title="Treino montado através do Saiyan Project"
+                />
               </a>
             </div>
             <div className="basis-1/3 flex-1">
@@ -177,19 +178,27 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web4}
-                title="Projeto Privado"
+                title="Contribuição em Projeto Privado"
               />
             </div>
           </div>
         </section>
         <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-             <a href="https://www.linkedin.com/in/leoreiis/" target="_blank" rel="noopener noreferrer">
-              <AiFillLinkedin />
-              </a>
-              <a href="https://github.com/leoReiis" target="_blank" rel="noopener noreferrer">
-              <AiFillGithub />
-              </a>
-            </div>
+          <a
+            href="https://www.linkedin.com/in/leoreiis/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiFillLinkedin />
+          </a>
+          <a
+            href="https://github.com/leoReiis"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiFillGithub />
+          </a>
+        </div>
       </main>
     </div>
   );
