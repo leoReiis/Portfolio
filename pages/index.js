@@ -190,20 +190,16 @@ export default function Home() {
               <Image src={csharp} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">C#</h3>
               {language ? (
-                <div>
-                  <p className="py-2">
-                    Recently, I have been exploring the language and
-                    capabilities of .NET. I dedicate daily time to studies, and
-                    soon I will have a project to share here.
-                  </p>
-                </div>
+                <p className="py-2">
+                  Recently, I have been exploring the language and capabilities
+                  of .NET. I dedicate daily time to studies, and soon I will
+                  have a project to share here.
+                </p>
               ) : (
                 <p className="py-2">
-                  <div>
-                    Recentemente, tenho explorado a linguagem e as
-                    potencialidades do .NET. Dedico tempo diário aos estudos e
-                    em breve terei um projeto para compartilhar aqui.
-                  </div>
+                  Recentemente, tenho explorado a linguagem e as potencialidades
+                  do .NET. Dedico tempo diário aos estudos e em breve terei um
+                  projeto para compartilhar aqui.
                 </p>
               )}
             </div>
