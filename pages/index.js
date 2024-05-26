@@ -1,8 +1,7 @@
 import Head from "next/head";
-import { useEffect } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { BsCardText } from "react-icons/bs";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { BsApple } from "react-icons/bs";
 import { useState } from "react";
 import profile from "../public/profile.png";
 import php from "../public/php.png";
@@ -15,7 +14,7 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const [language, setLanguage] = useState(false);
 
   return (
@@ -30,14 +29,14 @@ export default function Home() {
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className="font-burtons text-xl">Leonardo Reis</h1>
             <ul className="flex items-center">
-              <li>
+              <li class="px-8">
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
                   className=" cursor-pointer text-2xl"
                 />
               </li>
-              <li>
-                <BsApple
+              <li class="px-8">
+                <BsCardText
                   onClick={() => setLanguage(!language)}
                   className=" cursor-pointer text-2xl"
                 />
@@ -45,9 +44,15 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="#"
+                  href={
+                    language
+                      ? "https://drive.google.com/file/d/1dPPHkg-9gn3WHfb5jVMzVWF1h-dzUFJC/view?usp=drive_link"
+                      : "https://drive.google.com/file/d/1ThDDo2TPR-UZ7Vt0O5nmzxBGEtcxy_TZ/view?usp=drive_link"
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  CV
+                  {language ? "RESUME" : "CV"}
                 </a>
               </li>
             </ul>
