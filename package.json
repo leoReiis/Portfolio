@@ -5,11 +5,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
   },
   "dependencies": {
     "firebase": "^9.10.0",
@@ -19,6 +20,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.23.1",
+    "react-scripts": "^5.0.1",
     "swr": "^2.2.5"
   },
   "devDependencies": {
