@@ -15,7 +15,7 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [language, setLanguage] = useState(false);
 
   return (
@@ -57,8 +57,8 @@ export default function Home() {
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
                   href={
                     language
-                      ? "https://drive.google.com/file/d/1dPPHkg-9gn3WHfb5jVMzVWF1h-dzUFJC/view?usp=drive_link"
-                      : "https://drive.google.com/file/d/1ThDDo2TPR-UZ7Vt0O5nmzxBGEtcxy_TZ/view?usp=drive_link"
+                      ? "https://drive.google.com/file/d/1rS4HB9MzmzaHWrp7nWFTD5XQROhJF6Jz/view?usp=sharing"
+                      : "https://drive.google.com/file/d/1sCLYSXmL2lj1O3ylMD9sk1ddRLrjr8gu/view?usp=sharing"
                   }
                   target="_blank"
                   rel="noopener noreferrer"
@@ -330,34 +330,36 @@ export default function Home() {
         <br />
 
         {/* <section class="bg-white dark:bg-gray-900">
-          <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-            <h2 class="text-teal-500 mb-4 text-4xl tracking-tight font-extrabold text-center dark:text-white">
-              Contato
-            </h2>
-            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-              Please contact me directly at
-              <a href="mailto:leonardoreis.ufsj@gmail.com" class="underline">
-                <p>leonardoreis.ufsj@gmail.com</p>
-              </a>
-              or through this form.
-            </p>
+          <span className="text-teal-500">
+            {language ? (
+              <h3 className="text-3xl py-1 dark:text-white ">
+                <div>Contato</div>
+              </h3>
+            ) : (
+              <h3 className="text-3xl py-1 dark:text-white ">
+                <div> Contato</div>
+              </h3>
+            )}
+          </span>
 
+          <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <form action="#" class="space-y-8">
               <div>
                 <label
-                  for="subject"
+                  for="email"
                   class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
-                  Subject
+                  Email
                 </label>
                 <input
-                  type="text"
-                  id="subject"
+                  type="email"
+                  id="email"
                   class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                  placeholder="Let us know how we can help you"
+                  placeholder="Enter your email address"
                   required
                 />
               </div>
+
               <div class="sm:col-span-2">
                 <label
                   for="message"
@@ -384,6 +386,7 @@ export default function Home() {
             </form>
           </div>
         </section> */}
+
         <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
           <a
             href="https://www.linkedin.com/in/leoreiis/"
